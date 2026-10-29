@@ -1634,7 +1634,7 @@ int real_main(int argc, char **argv)
 
     /* setup the elements */
     for (size_t i = 0; i < nelements; i++) {
-        elms[i].key = 2 * CONFIG_DEFAULT_KEY_STRIDE;
+        elms[i].key = i * CONFIG_DEFAULT_KEY_STRIDE;
         elms[i].stats = 0;
         elms[i].value = 1;
     }
